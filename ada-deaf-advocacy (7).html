@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advocate for Deaf ADA Rights — Send Your Email Today</title>
+<meta name="description" content="Help strengthen ADA communication standards for Deaf and hard-of-hearing individuals. Fill in your name and send to 9 key contacts in under 5 minutes.">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #1a2d4a;
+    --navy-light: #243b5e;
+    --gold: #e8c547;
+    --gold-dim: #b89b2e;
+    --cream: #f5f0e8;
+    --cream-dim: #e8e0d0;
+    --white: #ffffff;
+    --muted: #8a9bb5;
+    --success: #3db87a;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: var(--cream);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* HERO */
+  .hero {
+    position: relative;
+    padding: 80px 24px 60px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(232,197,71,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(232,197,71,0.3);
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 28px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.1;
+    color: var(--white);
+    max-width: 700px;
+    margin: 0 auto 24px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 520px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+
+  .stat { text-align: center; }
+  .stat-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    color: var(--gold);
+    display: block;
+  }
+  .stat-label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  /* DIVIDER */
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(232,197,71,0.3), transparent);
+    margin: 0 24px;
+  }
+
+  /* MAIN CONTENT */
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 24px;
+  }
+
+  /* WHY SECTION */
+  .why-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+
+  .why-card {
+    background: var(--navy-mid);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+
+  .why-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .why-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .why-card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  /* FORM */
+  .form-card {
+    background: var(--navy-mid);
+    border: 1px solid rgba(232,197,71,0.2);
+    border-radius: var(--radius);
+    padding: 32px;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label { font-size: 12px; color: var(--muted); font-weight: 500; }
+
+  .field input, .field select {
+    background: var(--navy);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-size: 14px;
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    transition: border-color 0.2s;
+  }
+
+  .field input:focus, .field select:focus {
+    outline: none;
+    border-color: rgba(232,197,71,0.5);
+  }
+
+  .field select option { background: var(--navy-mid); }
+
+  /* EMAIL PREVIEW */
+  .email-preview-wrap {
+    margin-top: 24px;
+    background: var(--navy);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .email-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .email-header-subject {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .email-header-subject strong {
+    color: var(--cream);
+    font-weight: 500;
+  }
+
+  .email-body-wrap {
+    padding: 20px;
+    max-height: 240px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.75;
+    color: var(--cream-dim);
+    white-space: pre-wrap;
+  }
+
+  .email-body-wrap::-webkit-scrollbar { width: 4px; }
+  .email-body-wrap::-webkit-scrollbar-track { background: transparent; }
+  .email-body-wrap::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+
+  .copy-btn {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    padding: 14px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .copy-btn:hover { background: #f0cf50; }
+  .copy-btn:active { transform: scale(0.98); }
+  .copy-btn.copied { background: var(--success); color: var(--white); }
+
+  /* CONTACTS */
+  .contacts-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-group-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+
+  .contact-row {
+    background: var(--navy-mid);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: var(--radius-sm);
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    transition: border-color 0.2s;
+  }
+
+  .contact-row:hover { border-color: rgba(232,197,71,0.3); }
+
+  .contact-row-info { flex: 1; min-width: 0; }
+  .contact-row-name { font-size: 14px; font-weight: 500; color: var(--white); }
+  .contact-row-role { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  .contact-row-badge {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 100px;
+    border: 1px solid rgba(232,197,71,0.3);
+    color: var(--gold);
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+
+  .visit-btn {
+    padding: 7px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255,255,255,0.15);
+    background: transparent;
+    color: var(--cream);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+    display: inline-block;
+  }
+
+  .visit-btn:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.3); }
+
+  /* HOW IT WORKS */
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    counter-reset: steps;
+  }
+
+  .step-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    counter-increment: steps;
+  }
+
+  .step-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(232,197,71,0.15);
+    border: 1px solid rgba(232,197,71,0.3);
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-text { padding-top: 6px; }
+  .step-text strong { color: var(--white); font-size: 14px; display: block; margin-bottom: 4px; }
+  .step-text span { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  /* SHARE SECTION */
+  .share-box {
+    background: linear-gradient(135deg, rgba(232,197,71,0.08), rgba(232,197,71,0.03));
+    border: 1px solid rgba(232,197,71,0.2);
+    border-radius: var(--radius);
+    padding: 32px;
+    text-align: center;
+  }
+
+  .share-box h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+
+  .share-box p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .share-url-wrap {
+    display: flex;
+    gap: 10px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .share-url {
+    flex: 1;
+    background: var(--navy);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-size: 13px;
+    color: var(--muted);
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .share-copy-btn {
+    padding: 10px 18px;
+    background: var(--gold);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .share-copy-btn:hover { background: #f0cf50; }
+  .share-copy-btn.copied { background: var(--success); color: var(--white); }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate { animation: fadeUp 0.5s ease both; }
+</style>
+</head>
+<body>
+
+<!-- EDIT MODE BANNER -->
+<div id="editBanner" style="display: none; position: sticky; top: 0px; z-index: 1000; background: rgba(232, 197, 71, 0.15); border-bottom: 1px solid rgba(232, 197, 71, 0.4); padding: 10px 20px; text-align: center; font-size: 13px; color: var(--gold);">
+  ✏️ Edit mode is ON — click any text on the page to change it. When you're done, click <strong>"✓ Done editing"</strong> then <strong>"Download updated page"</strong>.
+</div>
+
+<!-- FLOATING EDIT TOOLBAR -->
+<div style="position: fixed; bottom: 24px; right: 24px; z-index: 999; display: flex; flex-direction: column; gap: 10px; align-items: flex-end;">
+  <button id="editModeBtn" onclick="toggleEditMode()" style="padding: 12px 20px; background: var(--gold); color: var(--navy); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; border-radius: 100px; font-family: &quot;DM Sans&quot;, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 20px; white-space: nowrap;">✏️ Edit this page</button>
+  <button onclick="downloadPage()" style="padding: 10px 18px; background: var(--navy-mid); color: var(--cream); border: 1px solid rgba(255,255,255,0.15); border-radius: 100px; font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; cursor: pointer; box-shadow: 0 4px 20px rgba(0,0,0,0.4); white-space: nowrap;">⬇️ Download updated page</button>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Deaf Rights Advocacy</div>
+  <h1 contenteditable="false" style="border-radius: 4px; min-height: 1em;">Help <em>Strengthen</em> ADA Communication Rights for Deaf Americans</h1>
+  <p class="hero-sub" contenteditable="false" style="border-radius: 4px; min-height: 1em;">48 million Americans have hearing loss — yet the ADA's "effective communication" rules are too vague to protect their rights. Fill in your name, copy the email provided below, and send it to key decision-makers in under 5 minutes.</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <span class="stat-num">48M</span>
+      <span class="stat-label">Americans with hearing loss</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">13</span>
+      <span class="stat-label">Key contacts</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">5 min</span>
+      <span class="stat-label">To make a difference</span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- WHY THIS MATTERS -->
+<div class="container">
+  <section class="section">
+    <div class="section-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Why this matters</div>
+    <div class="section-title" contenteditable="false" style="border-radius: 4px; min-height: 1em;">The problem with "effective communication"</div>
+    <p style="color: var(--muted); font-size: 15px; line-height: 1.7; margin-bottom: 24px;">The ADA (28 CFR §§ 35.160, 36.303) requires both public and private entities to provide "effective communication" — but that phrase is so vague that each business interprets it differently. The result: millions of Deaf individuals are routinely denied equal access to healthcare, businesses, and public services — despite legal protections that exist on paper.</p>
+    <div class="why-cards">
+      <div class="why-card">
+        <div class="why-icon">🏥</div>
+        <h3 contenteditable="false" style="border-radius: 4px; min-height: 1em;">Healthcare emergencies</h3>
+        <p contenteditable="false" style="border-radius: 4px; min-height: 1em;">Research in the Journal of Emergency Nursing found Deaf patients face persistent barriers in emergency departments where care relies on rapid spoken exchanges — compromising patient safety and informed consent.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🧠</div>
+        <h3 contenteditable="false" style="border-radius: 4px; min-height: 1em;">Mental health impact</h3>
+        <p contenteditable="false" style="border-radius: 4px; min-height: 1em;">Studies show 47% of Deaf individuals who experience communication discrimination feel excluded, 39% report damaged confidence, and research links these barriers to increased mental health challenges.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚖️</div>
+        <h3 contenteditable="false" style="border-radius: 4px; min-height: 1em;">Unenforced laws</h3>
+        <p contenteditable="false" style="border-radius: 4px; min-height: 1em;">The DOJ enforces ADA compliance mostly through individual complaints — not proactive oversight. Most people never file a lawsuit even with valid cause, leaving violations undocumented and ongoing.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📋</div>
+        <h3 contenteditable="false" style="border-radius: 4px; min-height: 1em;">No clear minimum standard</h3>
+        <p contenteditable="false" style="border-radius: 4px; min-height: 1em;">The ADA lists written communication as one possible option — but does not require it. Businesses are permitted to choose any method they deem "effective," with no enforceable baseline.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 28px; background: var(--navy-mid); border-left: 3px solid var(--gold); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 18px 20px;">
+      <p style="font-size: 13px; color: var(--muted); line-height: 1.7; margin: 0;">
+        <strong style="color: var(--cream); display: block; margin-bottom: 6px;">By the numbers — Hearing Loss in America</strong>
+        48 million Americans have some degree of hearing loss (Hearing Loss Association of America). 1 in 8 people of all ages has hearing loss. 2–3 out of every 1,000 children are born with detectable hearing loss. Nearly 50% of adults 75+ report difficulty hearing. Even mild hearing loss can cause a child to miss up to 50% of classroom discussion.
+      </p>
+    </div>
+
+    <div style="margin-top: 16px; background: var(--navy-mid); border-left: 3px solid rgba(232,197,71,0.4); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 18px 20px;">
+      <p style="font-size: 13px; color: var(--muted); line-height: 1.7; margin: 0; font-style: italic;">
+        "Regulatory frameworks alone are insufficient to guarantee equitable access, as many laws lack mandatory compliance mechanisms or fail to provide detailed, context-specific guidelines for real-world situations."
+        <span style="display: block; margin-top: 6px; color: var(--gold); font-style: normal; font-size: 12px;">— Loaiza-Ramírez &amp; González-Beltrán, 2025</span>
+      </p>
+    </div>
+  </section>
+</div>
+
+<div class="divider"></div>
+
+<!-- WHAT WE'RE ASKING FOR -->
+<div class="container">
+  <section class="section">
+    <div class="section-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">The ask</div>
+    <div class="section-title" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Three concrete reforms</div>
+    <p style="color: var(--muted); font-size: 15px; line-height: 1.7; margin-bottom: 28px;">Based on policy research, these three changes to ADA (28 CFR §§ 35.160, 36.303) would dramatically improve communication access for Deaf individuals without overhauling existing law:</p>
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="background: var(--navy-mid); border: 1px solid rgba(255,255,255,0.07); border-radius: var(--radius); padding: 20px 22px; display: flex; gap: 16px; align-items: flex-start;">
+        <div style="font-size: 28px; flex-shrink: 0; margin-top: 2px;">✍️</div>
+        <div>
+          <h3 style="font-size: 15px; color: var(--white); margin-bottom: 6px;">Mandate written communication as a guaranteed baseline</h3>
+          <p style="font-size: 13px; color: var(--muted); line-height: 1.6;">All public and private entities must have a form of written communication available at all times when interacting with a Deaf individual. This simple, low-cost requirement would give every Deaf person a reliable fallback when other accommodations are unavailable.</p>
+        </div>
+      </div>
+      <div style="background: var(--navy-mid); border: 1px solid rgba(255,255,255,0.07); border-radius: var(--radius); padding: 20px 22px; display: flex; gap: 16px; align-items: flex-start;">
+        <div style="font-size: 28px; flex-shrink: 0; margin-top: 2px;">🎓</div>
+        <div>
+          <h3 style="font-size: 15px; color: var(--white); margin-bottom: 6px;">Require comprehensive employee training</h3>
+          <p style="font-size: 13px; color: var(--muted); line-height: 1.6;">The ADA already calls training a "critical and often overlooked component" — yet most medical and business training programs fail to prepare staff to communicate with Deaf individuals. Mandatory, ongoing training on ADA communication responsibilities must be enforced.</p>
+        </div>
+      </div>
+      <div style="background: var(--navy-mid); border: 1px solid rgba(255,255,255,0.07); border-radius: var(--radius); padding: 20px 22px; display: flex; gap: 16px; align-items: flex-start;">
+        <div style="font-size: 28px; flex-shrink: 0; margin-top: 2px;">🔍</div>
+        <div>
+          <h3 style="font-size: 15px; color: var(--white); margin-bottom: 6px;">Strengthen proactive enforcement</h3>
+          <p style="font-size: 13px; color: var(--muted); line-height: 1.6;">Currently the DOJ enforces ADA compliance only in response to individual complaints — not proactive oversight. Most people never file a lawsuit even when their rights are violated. Regular compliance check-ins and stronger accountability mechanisms are urgently needed.</p>
+        </div>
+      </div>
+    </div>
+    <p style="font-size: 12px; color: var(--muted); margin-top: 16px; font-style: italic;">Policy recommendations based on: Crouch, R. (2026). Addressing Communication Inequities: Reforming ADA Standards for Deaf Accessibility. Utah Valley University, SW-3500-002.</p>
+  </section>
+</div>
+
+<div class="divider"></div>
+
+<!-- HOW IT WORKS -->
+<div class="container">
+  <section class="section">
+    <div class="section-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">How to help</div>
+    <div class="section-title" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Four simple steps</div>
+    <div class="steps">
+      <div class="step-row">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          <strong contenteditable="false" style="border-radius: 4px; min-height: 1em;">Fill in your information below</strong>
+          <span contenteditable="false" style="border-radius: 4px; min-height: 1em;">Your name, role, and city personalize the email so it counts as a constituent message.</span>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          <strong contenteditable="false" style="border-radius: 4px; min-height: 1em;">Click "Copy email"</strong>
+          <span contenteditable="false" style="border-radius: 4px; min-height: 1em;">The full email is copied to your clipboard, ready to paste anywhere.</span>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">3</div>
+        <div class="step-text">
+          <strong contenteditable="false" style="border-radius: 4px; min-height: 1em;">Click "Visit &amp; paste" for each contact</strong>
+          <span contenteditable="false" style="border-radius: 4px; min-height: 1em;">Their official contact form opens in a new tab. Paste the email and hit send.</span>
+        </div>
+      </div>
+      <div class="step-row">
+        <div class="step-num">4</div>
+        <div class="step-text">
+          <strong contenteditable="false" style="border-radius: 4px; min-height: 1em;">Share this page with others</strong>
+          <span contenteditable="false" style="border-radius: 4px; min-height: 1em;">The more people who send this, the harder it is to ignore. Use the share link at the bottom.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="divider"></div>
+
+<!-- PERSONALIZE & EMAIL -->
+<div class="container">
+  <section class="section">
+    <div class="section-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Step 1 &amp; 2</div>
+    <div class="section-title" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Personalize &amp; copy your email</div>
+    <div class="form-card">
+      <div class="form-row">
+        <div class="field">
+          <label>Your full name</label>
+          <input type="text" id="yourName" placeholder="Jane Smith" oninput="updateEmail()">
+        </div>
+        <div class="field">
+          <label>Your role</label>
+          <select id="yourRole" onchange="updateEmail()">
+            <option value="concerned citizen">Concerned citizen</option>
+            <option value="Deaf individual">Deaf individual</option>
+            <option value="student">Student</option>
+            <option value="professional">Professional</option>
+            <option value="caregiver">Caregiver / family member</option>
+            <option value="healthcare worker">Healthcare worker</option>
+            <option value="educator">Educator</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label>Your city &amp; state</label>
+          <input type="text" id="yourCity" placeholder="Salt Lake City, UT" oninput="updateEmail()">
+        </div>
+        <div class="field">
+          <label>Your email (optional)</label>
+          <input type="email" id="yourEmail" placeholder="you@email.com" oninput="updateEmail()">
+        </div>
+      </div>
+
+      <div class="email-preview-wrap">
+        <div class="email-header">
+          <div class="email-header-subject"><strong>Subject:</strong> Advocating for Clearer ADA Communication Standards for Deaf Accessibility</div>
+        </div>
+        <div class="email-body-wrap" id="emailPreview">Dear [Legislator/Organization Name],
+
+My name is [Your Name], and I am a concerned citizen from [City, State]. I am writing to urge you to consider strengthening and clarifying communication requirements under the Americans with Disabilities Act (ADA), specifically regarding accessibility for Deaf and hard-of-hearing individuals.
+
+While the ADA (28 CFR §§ 35.160 and 36.303) requires "effective communication" through auxiliary aids and services, the language is currently too broad and inconsistently enforced. This ambiguity often results in unequal access in essential settings such as healthcare, public services, and private businesses. Deaf individuals continue to experience communication barriers that affect informed consent, safety, and equal participation in society.
+
+Research and lived experiences consistently show that this lack of clarity leads to inconsistent implementation, especially in private entities where "effective communication" is interpreted differently by each organization. As a result, accessibility is often dependent on individual discretion rather than clear, enforceable standards.
+
+I respectfully urge you to support reforms that would:
+
+• Establish clearer minimum standards for accessible communication (including guaranteed access to written communication and other accessible formats in service settings)
+• Require consistent and comprehensive employee training on ADA communication responsibilities
+• Strengthen enforcement mechanisms to ensure compliance beyond individual complaints
+• Reduce ambiguity in "effective communication" so access is consistent, reliable, and not subjective
+
+These improvements would not replace existing ADA protections but would strengthen their effectiveness and ensure they are implemented as intended. Clearer standards would reduce discrimination, improve safety, and promote equal access for millions of Deaf and hard-of-hearing individuals.
+
+Thank you for your time and consideration of this important issue. I would welcome the opportunity to provide additional information or discuss this further.
+
+Sincerely,
+[Your Name]
+[City, State]</div>
+      </div>
+
+      <button class="copy-btn" id="copyBtn" onclick="copyEmail()">Copy email to clipboard</button>
+    </div>
+  </section>
+</div>
+
+<div class="divider"></div>
+
+<!-- CONTACTS -->
+<div class="container">
+  <section class="section">
+    <div class="section-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Step 3</div>
+    <div class="section-title" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Decide your recipients ~ (Send to all at the bottom)</div>
+    <p style="color: var(--muted); font-size: 14px; margin-bottom: 8px;">After copying your email above, click "Visit &amp; paste" to open each official contact form. Paste and send. That's it.</p>
+
+    <div class="contacts-grid">
+      <div class="contact-group-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah Senators</div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Mike Lee <span class="contact-row-badge">Utah</span></div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">U.S. Senator</div>
+        </div>
+        <a class="visit-btn" href="https://www.lee.senate.gov/contact" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">John Curtis <span class="contact-row-badge">Utah</span></div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">U.S. Senator</div>
+        </div>
+        <a class="visit-btn" href="https://www.curtis.senate.gov/contact" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+
+      <div class="contact-group-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah House Representatives</div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Blake Moore</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">U.S. Representative, District 1</div>
+        </div>
+        <a class="visit-btn" href="https://blakemoore.house.gov/contact" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Celeste Maloy</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">U.S. Representative, District 2</div>
+        </div>
+        <a class="visit-btn" href="https://maloy.house.gov/contact" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Burgess Owens</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">U.S. Representative, District 4</div>
+        </div>
+        <a class="visit-btn" href="https://owens.house.gov/contact" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+
+      <div class="contact-group-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Federal Enforcement — High Impact</div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Dept. of Justice — ADA Civil Rights Division</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Primary ADA enforcement agency</div>
+        </div>
+        <a class="visit-btn" href="https://www.ada.gov/file-a-complaint/" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">HHS — Office for Civil Rights</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Healthcare accessibility enforcement</div>
+        </div>
+        <a class="visit-btn" href="https://www.hhs.gov/ocr/complaints/index.html" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+
+      <div class="contact-group-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Congressional Committees — Where Laws Are Made</div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Senate Judiciary Committee <span class="contact-row-badge">Civil Rights</span></div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Oversees ADA enforcement &amp; civil rights law</div>
+        </div>
+        <a class="visit-btn" href="https://www.judiciary.senate.gov/about/faq" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+
+      <div class="contact-group-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah State — Local Power</div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Governor Spencer Cox <span class="contact-row-badge">Utah</span></div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah Governor's Office</div>
+        </div>
+        <a class="visit-btn" href="https://governor.utah.gov/contact/" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah DSDHH — Div. of Services for the Deaf <span class="contact-row-badge">Utah</span></div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah's dedicated state agency for Deaf &amp; hard-of-hearing individuals</div>
+        </div>
+        <a class="visit-btn" href="https://jobs.utah.gov/usor/dhh/" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+
+      <div class="contact-group-label" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Advocacy Organizations — Amplify Your Voice</div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">National Association of the Deaf (NAD)</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Leading national Deaf policy organization</div>
+        </div>
+        <a class="visit-btn" href="https://www.nad.org/contact/" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">National Council on Disability (NCD)</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Federal agency advising Congress on disability policy — email: ncd@ncd.gov</div>
+        </div>
+        <a class="visit-btn" href="https://www.ncd.gov/contact/" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">ACLU Disability Rights Program</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Legal advocacy — fights ADA cases in court</div>
+        </div>
+        <a class="visit-btn" href="https://www.aclu.org/issues/disability-rights" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+      <div class="contact-row">
+        <div class="contact-row-info">
+          <div class="contact-row-name" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Disability Rights Utah</div>
+          <div class="contact-row-role" contenteditable="false" style="border-radius: 4px; min-height: 1em;">Utah's state-level disability legal advocacy</div>
+        </div>
+        <a class="visit-btn" href="https://disabilityrightsutah.org/contact/" target="_blank" rel="noopener">Visit &amp; paste ↗</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="divider"></div>
+
+<!-- SHARE -->
+<div class="container">
+  <section class="section">
+    <div class="share-box">
+      <h3 contenteditable="false" style="border-radius: 4px; min-height: 1em;">The google docs below has all of the emails!<br>Copy &amp; paste if that is preferred :)</h3>
+      <p contenteditable="false" style="border-radius: 4px; min-height: 1em;"><div style="text-align: start;"><span style="background-color: initial; font-size: 13.6px;"><font color="#747d8c" face="monospace">https://docs.google.com/document/d/1tMOvh_JnkGB7RxYLE-xIHB4tjbwxsAlUK_FO-xj2Cxs/edit?usp=sharing</font></span></div></p>
+      <div class="share-url-wrap">
+        <input class="share-url" type="text" id="shareUrl" value="Share this page by copying its link from your browser's address bar" readonly="">
+        <button class="share-copy-btn" id="shareBtn" onclick="copyPageUrl()">Copy link</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <p style="color: var(--cream); font-weight: 500; margin-bottom: 6px; border-radius: 4px; min-height: 1em;" contenteditable="false">Research &amp; advocacy by Rachel Crouch</p>
+  <p contenteditable="false" style="border-radius: 4px; min-height: 1em;">Department of Social Work, Utah Valley University</p>
+  <p style="margin-top: 8px; border-radius: 4px; min-height: 1em;" contenteditable="false">This page is a free advocacy tool. It does not collect any personal information.</p>
+  <p style="margin-top: 8px; border-radius: 4px; min-height: 1em;" contenteditable="false">Built to support ADA communication rights for Deaf and hard-of-hearing individuals across the United States.</p>
+</footer>
+
+<script>
+const emailTemplate = (name, role, city, email) => {
+  const n = name || '[Your Name]';
+  const r = role || 'concerned citizen';
+  const c = city || '[City, State]';
+  const e = email ? '\n' + email : '';
+  return `Dear [Legislator/Organization Name],
+
+My name is ${n}, and I am a ${r} from ${c}. I am writing to urge you to consider strengthening and clarifying communication requirements under the Americans with Disabilities Act (ADA), specifically regarding accessibility for Deaf and hard-of-hearing individuals.
+
+While the ADA (28 CFR §§ 35.160 and 36.303) requires "effective communication" through auxiliary aids and services, the language is currently too broad and inconsistently enforced. This ambiguity often results in unequal access in essential settings such as healthcare, public services, and private businesses. Deaf individuals continue to experience communication barriers that affect informed consent, safety, and equal participation in society.
+
+Research and lived experiences consistently show that this lack of clarity leads to inconsistent implementation, especially in private entities where "effective communication" is interpreted differently by each organization. As a result, accessibility is often dependent on individual discretion rather than clear, enforceable standards.
+
+I respectfully urge you to support reforms that would:
+
+• Establish clearer minimum standards for accessible communication (including guaranteed access to written communication and other accessible formats in service settings)
+• Require consistent and comprehensive employee training on ADA communication responsibilities
+• Strengthen enforcement mechanisms to ensure compliance beyond individual complaints
+• Reduce ambiguity in "effective communication" so access is consistent, reliable, and not subjective
+
+These improvements would not replace existing ADA protections but would strengthen their effectiveness and ensure they are implemented as intended. Clearer standards would reduce discrimination, improve safety, and promote equal access for millions of Deaf and hard-of-hearing individuals.
+
+Thank you for your time and consideration of this important issue. I would welcome the opportunity to provide additional information or discuss this further.
+
+Sincerely,
+${n}${e}
+${c}`;
+};
+
+function updateEmail() {
+  const name = document.getElementById('yourName').value;
+  const role = document.getElementById('yourRole').value;
+  const city = document.getElementById('yourCity').value;
+  const email = document.getElementById('yourEmail').value;
+  document.getElementById('emailPreview').textContent = emailTemplate(name, role, city, email);
+}
+
+function copyEmail() {
+  const text = document.getElementById('emailPreview').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = 'Copied! Now click Visit & paste below';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy email to clipboard';
+      btn.classList.remove('copied');
+    }, 3000);
+  });
+}
+
+function copyPageUrl() {
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(() => {
+    const btn = document.getElementById('shareBtn');
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = 'Copy link';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+
+updateEmail();
+
+// ===== EDIT MODE =====
+let editMode = false;
+const editableSelectors = [
+  '.hero h1', '.hero-sub', '.hero-eyebrow',
+  '.why-card h3', '.why-card p',
+  '.section-title', '.section-label',
+  'footer p', '.share-box h3', '.share-box p',
+  '.step-text strong', '.step-text span',
+  '.contact-row-name', '.contact-row-role',
+  '.contact-group-label'
+];
+
+function toggleEditMode() {
+  editMode = !editMode;
+  const btn = document.getElementById('editModeBtn');
+  const banner = document.getElementById('editBanner');
+
+  if (editMode) {
+    btn.textContent = '✓ Done editing';
+    btn.style.background = '#3db87a';
+    btn.style.color = '#fff';
+    banner.style.display = 'block';
+    editableSelectors.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.contentEditable = 'true';
+        el.style.outline = '2px dashed rgba(232,197,71,0.5)';
+        el.style.borderRadius = '4px';
+        el.style.cursor = 'text';
+        el.style.minHeight = '1em';
+      });
+    });
+  } else {
+    btn.textContent = '✏️ Edit this page';
+    btn.style.background = 'var(--gold)';
+    btn.style.color = 'var(--navy)';
+    banner.style.display = 'none';
+    editableSelectors.forEach(sel => {
+      document.querySelectorAll(sel).forEach(el => {
+        el.contentEditable = 'false';
+        el.style.outline = '';
+        el.style.cursor = '';
+      });
+    });
+  }
+}
+
+function downloadPage() {
+  const html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  const blob = new Blob([html], { type: 'text/html' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'ada-deaf-advocacy.html';
+  a.click();
+}
+</script>
+
+
+</body></html>
